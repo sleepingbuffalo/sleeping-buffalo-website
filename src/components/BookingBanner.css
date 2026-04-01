@@ -1,0 +1,53 @@
+.booking-banner {
+  padding: 80px 0;
+}
+
+.booking-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.booking-banner-text {
+  flex: 1;
+}
+
+.booking-banner-text h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 12px;
+}
+
+.booking-banner-text p {
+  color: rgba(240, 228, 204, 0.85);
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.booking-banner-text a {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
+.booking-banner-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.booking-subtext {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(240, 228, 204, 0.5);
+}
+
+@media (max-width: 768px) {
+  .booking-banner-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

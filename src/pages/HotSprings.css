@@ -1,0 +1,320 @@
+/* ============================================
+   HOT SPRINGS PAGE
+   ============================================ */
+
+/* ---------- Indoor Facility ---------- */
+.hs-indoor {
+  padding: var(--section-padding);
+}
+
+/* ---------- Outdoor Pool ---------- */
+.hs-outdoor {
+  padding: var(--section-padding);
+}
+
+.hs-outdoor h2 {
+  margin-bottom: 48px;
+}
+
+.hs-outdoor-text {
+  max-width: 720px;
+  margin-top: 40px;
+}
+
+.hs-outdoor-text p + p {
+  margin-top: 16px;
+}
+
+/* ---------- Dual Image Layout ---------- */
+.hs-dual-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hs-dual-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  aspect-ratio: 16 / 10;
+}
+
+/* ---------- The Water Story ---------- */
+.hs-water {
+  padding: var(--section-padding);
+}
+
+.hs-water-wrap {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hs-water-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hs-water-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+  background: linear-gradient(
+    to top,
+    rgba(15, 10, 5, 0.92) 0%,
+    rgba(15, 10, 5, 0.7) 60%,
+    rgba(15, 10, 5, 0.2) 100%
+  );
+  width: 100%;
+}
+
+.hs-water-overlay h2 {
+  margin-bottom: 20px;
+}
+
+.hs-water-overlay p {
+  max-width: 640px;
+  margin-bottom: 16px;
+}
+
+.hs-water-highlight {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--gold);
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+/* ---------- Pool Temperature Guide ---------- */
+.hs-temps {
+  padding: var(--section-padding);
+}
+
+.hs-temps h2 {
+  margin-bottom: 48px;
+}
+
+.hs-temps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.hs-temp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.hs-temp-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.hs-temp-icon {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.hs-temp-deg {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.hs-temp-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: var(--cream);
+}
+
+.hs-temp-card p {
+  font-size: 0.9rem;
+  color: var(--cream-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.hs-temp-cold .hs-temp-deg {
+  color: #6BB8E0;
+}
+
+.hs-temp-cold {
+  border-color: rgba(107, 184, 224, 0.2);
+}
+
+.hs-temp-cold:hover {
+  border-color: #6BB8E0;
+}
+
+/* ---------- Sauna ---------- */
+.hs-sauna {
+  padding: var(--section-padding);
+}
+
+/* ---------- Facilities ---------- */
+.hs-facilities {
+  padding: var(--section-padding);
+}
+
+.hs-facilities h2 {
+  margin-bottom: 48px;
+}
+
+.hs-facilities-text {
+  max-width: 720px;
+  margin-top: 40px;
+}
+
+/* ---------- Hours & Admission ---------- */
+.hs-hours {
+  padding: var(--section-padding);
+}
+
+.hs-hours h2 {
+  margin-bottom: 48px;
+}
+
+.hs-hours-card-main {
+  max-width: 760px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 48px;
+}
+
+.hs-hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+}
+
+.hs-hours-list li {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--cream-muted);
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.hs-hours-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.5rem;
+  top: 13px;
+}
+
+.hs-admission {
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+}
+
+.hs-admission h3 {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.hs-rates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.hs-rate-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.hs-rate-label {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hs-rate-price {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cream);
+}
+
+.hs-cabin-note {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
+}
+
+.hs-cabin-note a {
+  color: var(--tan);
+  text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+  .hs-temps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hs-rates-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hs-dual-images {
+    grid-template-columns: 1fr;
+  }
+
+  .hs-dual-images img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .hs-water-wrap {
+    min-height: 400px;
+  }
+
+  .hs-water-overlay {
+    padding: 32px 24px;
+  }
+
+  .hs-temps-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .hs-hours-card-main {
+    padding: 32px 24px;
+  }
+}

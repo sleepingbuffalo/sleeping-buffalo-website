@@ -1,0 +1,216 @@
+/* ============================================
+   DINING PAGE
+   ============================================ */
+
+/* ---------- Shared ---------- */
+.din-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ---------- Section Padding ---------- */
+.din-steakhouse,
+.din-saloon,
+.din-game-room,
+.din-camp-store,
+.din-hours {
+  padding: var(--section-padding);
+}
+
+/* ---------- Two Column Layout ---------- */
+.din-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.din-two-col-reverse {
+  direction: ltr;
+}
+
+.din-two-col-reverse > :first-child {
+  order: 1;
+}
+
+.din-two-col-reverse > :last-child {
+  order: 2;
+}
+
+.din-two-col-image img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.din-two-col-text h2 {
+  margin-bottom: 20px;
+}
+
+.din-two-col-text p {
+  margin-bottom: 28px;
+  color: var(--cream-muted);
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+/* ---------- Stacked Image Pairs ---------- */
+.din-stacked-images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.din-stacked-images img {
+  aspect-ratio: 16 / 10;
+}
+
+/* ---------- Game Room (Full-Width Image) ---------- */
+.din-full-image-wrap {
+  margin-bottom: 48px;
+}
+
+.din-full-img {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.din-full-text {
+  max-width: 640px;
+}
+
+.din-full-text h2 {
+  margin-bottom: 16px;
+}
+
+.din-full-text p {
+  color: var(--cream-muted);
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+/* ---------- Greenhouse & Farm (Full-Bleed) ---------- */
+.din-greenhouse {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.din-greenhouse-image-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.din-greenhouse-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.din-greenhouse-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 10, 5, 0.92) 0%,
+    rgba(15, 10, 5, 0.55) 50%,
+    rgba(15, 10, 5, 0.15) 100%
+  );
+}
+
+.din-greenhouse-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  max-width: 680px;
+}
+
+.din-greenhouse-content h2 {
+  margin-bottom: 20px;
+}
+
+.din-greenhouse-content p {
+  color: var(--cream-muted);
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+/* ---------- Hours Card ---------- */
+.din-hours-card {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 64px 48px;
+}
+
+.din-hours-card .eyebrow {
+  justify-content: center;
+}
+
+.din-hours-card h2 {
+  margin-bottom: 20px;
+}
+
+.din-hours-card p {
+  color: var(--cream-muted);
+  line-height: 1.75;
+  font-size: 1.1rem;
+}
+
+.din-phone-link {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.din-phone-link:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .din-two-col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .din-two-col-reverse > :first-child {
+    order: 2;
+  }
+
+  .din-two-col-reverse > :last-child {
+    order: 1;
+  }
+
+  .din-full-img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .din-greenhouse {
+    min-height: 480px;
+  }
+
+  .din-greenhouse-content {
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+
+  .din-hours-card {
+    padding: 40px 24px;
+  }
+}

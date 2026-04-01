@@ -1,0 +1,222 @@
+/* History Page */
+
+/* Hero — side by side */
+.hist-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hist-hero-split {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+
+.hist-hero-half {
+  flex: 1;
+  overflow: hidden;
+}
+
+.hist-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hist-sepia {
+  filter: sepia(0.8) contrast(0.9);
+}
+
+.hist-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 10, 5, 0.6);
+  z-index: 1;
+}
+
+.hist-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hist-hero-content .eyebrow {
+  justify-content: center;
+}
+
+.hist-hero-content h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+/* Beginning — full bleed image */
+.hist-beginning {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.hist-beginning-image-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.hist-beginning-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.6) contrast(0.85);
+}
+
+.hist-beginning-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 10, 5, 0.95) 0%, rgba(15, 10, 5, 0.5) 50%, rgba(15, 10, 5, 0.3) 100%);
+}
+
+.hist-beginning-content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 40px;
+  max-width: 720px;
+}
+
+.hist-beginning-content h2 {
+  margin-bottom: 20px;
+}
+
+/* Generic section */
+.hist-section {
+  padding: var(--section-padding);
+}
+
+.hist-section h2 {
+  margin-bottom: 20px;
+}
+
+.hist-text {
+  max-width: 700px;
+  font-size: 1.05rem;
+}
+
+/* Timeline */
+.hist-timeline {
+  margin-top: 48px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.hist-timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--gold) 80%, transparent);
+}
+
+.hist-timeline-item {
+  position: relative;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+.hist-timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  border: 2px solid var(--gold);
+}
+
+.hist-timeline-dot::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.hist-timeline-year {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--tan);
+  margin-bottom: 4px;
+}
+
+.hist-timeline-text {
+  font-size: 1.05rem;
+  color: var(--cream-muted);
+}
+
+/* Two col */
+.hist-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.hist-stone-img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.hist-two-col-text h2 {
+  margin-bottom: 20px;
+}
+
+/* Legacy */
+.hist-legacy {
+  padding: var(--section-padding);
+}
+
+.hist-legacy-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hist-legacy-content .eyebrow {
+  justify-content: center;
+}
+
+.hist-legacy-content h2 {
+  margin-bottom: 16px;
+}
+
+.hist-legacy-content p {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+  .hist-hero {
+    min-height: 500px;
+  }
+  .hist-hero-split {
+    flex-direction: column;
+  }
+  .hist-two-col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hist-beginning {
+    min-height: 400px;
+  }
+  .hist-beginning-content {
+    padding: 60px 20px;
+  }
+}

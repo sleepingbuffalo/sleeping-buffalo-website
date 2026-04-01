@@ -1,0 +1,43 @@
+.testimonial-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 40px 32px;
+  position: relative;
+}
+
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.testimonial-quote-mark {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--tan);
+  opacity: 0.2;
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  right: 28px;
+}
+
+.testimonial-text {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--cream-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.testimonial-attr {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}

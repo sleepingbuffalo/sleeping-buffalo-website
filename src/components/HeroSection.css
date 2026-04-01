@@ -1,0 +1,69 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero-half {
+  height: 65vh;
+  min-height: 400px;
+}
+
+.hero-image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: kenBurns 18s ease-in-out infinite alternate;
+}
+
+@keyframes kenBurns {
+  0% { transform: scale(1.03); }
+  100% { transform: scale(1.08); }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(15, 10, 5, 0.92) 0%,
+    rgba(15, 10, 5, 0.5) 40%,
+    rgba(15, 10, 5, 0.15) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+.hero-half .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 500px;
+  }
+  .hero-half {
+    height: 50vh;
+    min-height: 320px;
+  }
+  .hero-content {
+    padding-bottom: 40px;
+  }
+}
