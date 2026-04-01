@@ -8,7 +8,7 @@
   height: 100vh;
   min-height: 650px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -44,18 +44,30 @@
 .home-hero-content {
   position: relative;
   z-index: 2;
-  padding-bottom: 100px;
+  padding-bottom: 0;
   max-width: 720px;
+}
+
+/* Hero eyebrow overrides */
+.home-hero-content .eyebrow-text {
+  font-weight: 700;
+  color: #F0E4CC;
+}
+
+.home-hero-content .eyebrow-line {
+  background: #F0E4CC;
 }
 
 .home-hero-content h1 {
   font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.1;
 }
 
 .home-hero-content h1 em {
   font-style: italic;
+  font-weight: 700;
   color: var(--tan-light);
 }
 
@@ -410,8 +422,12 @@
 }
 
 @media (max-width: 768px) {
+  .home-hero {
+    align-items: flex-start;
+  }
   .home-hero-content {
-    padding-bottom: 60px;
+    padding-top: 40vh;
+    padding-bottom: 0;
   }
   .home-hero-scroll {
     display: none;

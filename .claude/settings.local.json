@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(cp -r sleeping-buffalo-temp/* .)",
+      "Bash(cp sleeping-buffalo-temp/.gitignore .)",
+      "Bash(rm -rf sleeping-buffalo-temp)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(ls *.toml *.json index.html rename-photos.ps1)",
+      "Bash(ls src/components/*.jsx)",
+      "Bash(ls src/pages/*.jsx)",
+      "Bash(ls src/pages/*.css src/components/*.css src/styles/*.css)",
+      "Bash(ls /c/Users/chris/sleeping-buffalo-website/public/images/*.jpg)",
+      "Bash(find /c/Users/chris/sleeping-buffalo-website/public/images/ -maxdepth 1 -type f -size 0 -exec basename {} \\\\;)",
+      "Bash(node:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo:*)",
+      "Bash(where gh:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
