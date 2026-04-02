@@ -434,6 +434,28 @@
   .home-hero-content {
     padding-top: 0;
     padding-bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+  .home-hero-content .eyebrow-text {
+    color: #FFFFFF;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  .home-hero-content .eyebrow-line {
+    background: #FFFFFF;
+  }
+  .home-hero-content h1 {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+  }
+  .home-hero-content h1 em {
+    color: #FFD700;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+  }
+  .home-hero-sub {
+    color: #FFFFFF;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
   }
   .home-hero-scroll {
     display: none;
