@@ -33,14 +33,10 @@
   flex-shrink: 0;
 }
 
-.nav-logo-main {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #FFFFFF;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1) drop-shadow(0 1px 4px rgba(0, 0, 0, 0.7));
 }
 
 .nav-logo-sub {
