@@ -52,26 +52,36 @@ export default function Nav() {
               {link.label}
             </Link>
           ))}
+          <a
+            href={RESNEXUS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary nav-book-overlay"
+          >
+            Book Now
+          </a>
         </div>
 
-        <a
-          href={RESNEXUS_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary nav-book"
-        >
-          Book Now
-        </a>
+        <div className="nav-right">
+          <a
+            href={RESNEXUS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary nav-book"
+          >
+            Book Now
+          </a>
 
-        <button
-          className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+          <button
+            className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
     </nav>
   )

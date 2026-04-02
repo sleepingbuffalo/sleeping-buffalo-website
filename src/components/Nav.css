@@ -95,10 +95,20 @@
   width: 100%;
 }
 
-/* Single Book Now button */
+/* Book Now button */
 .nav-book {
   padding: 10px 24px;
   font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right-side group for mobile: Book Now + hamburger */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* Hamburger */
@@ -136,37 +146,49 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
+/* Overlay Book Now — hidden on desktop */
+.nav-book-overlay {
+  display: none;
+}
+
 /* Mobile */
-@media (max-width: 960px) {
-  .nav-book {
-    display: none;
-  }
-
-  .nav-hamburger {
-    display: flex;
-  }
-
+@media (max-width: 768px) {
   .nav-links {
+    display: none;
     position: fixed;
     inset: 0;
     background: rgba(15, 10, 5, 0.98);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 36px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.35s, visibility 0.35s;
+    gap: 32px;
+    z-index: 1000;
   }
 
   .nav-links-open {
-    opacity: 1;
-    visibility: visible;
+    display: flex;
   }
 
   .nav-link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.15em;
     text-shadow: none;
+    color: var(--cream);
+  }
+
+  .nav-book-overlay {
+    display: inline-flex;
+    margin-top: 12px;
+    padding: 14px 36px;
+    font-size: 0.85rem;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-book {
+    padding: 10px 20px;
+    font-size: 0.68rem;
   }
 }
