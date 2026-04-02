@@ -419,6 +419,28 @@
   }
 }
 
+/* ── Desktop hero: frosted glass + text shadows ──────────────────────────── */
+@media (min-width: 769px) {
+  .home-hero-content {
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 12px;
+    padding: 40px 48px;
+    max-width: 680px;
+  }
+  .home-hero-content .eyebrow-text {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  }
+  .home-hero-content h1 {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  }
+  .home-hero-sub {
+    color: #FFFFFF;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+  }
+}
+
 @media (max-width: 768px) {
   .home-hero {
     height: 85vh;
