@@ -34,10 +34,13 @@
   flex-shrink: 0;
 }
 
-.nav-logo-img {
-  height: 45px;
-  width: auto;
-  filter: brightness(0) invert(1) drop-shadow(0 1px 4px rgba(0, 0, 0, 0.7));
+.nav-logo-icon {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--tan-light);
+  line-height: 1;
 }
 
 .nav-logo-text {
@@ -46,23 +49,23 @@
 }
 
 .nav-logo-main {
-  font-family: var(--font-heading);
+  display: block;
+  font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--tan-light);
+  color: var(--cream);
+  letter-spacing: 0.05em;
   line-height: 1.2;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
 }
 
 .nav-logo-sub {
-  font-family: var(--font-ui);
-  font-size: 0.6rem;
-  font-weight: 400;
-  letter-spacing: 0.2em;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--cream-muted);
-  line-height: 1.3;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
 }
 
 /* Links */

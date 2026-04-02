@@ -38,7 +38,7 @@ export default function Nav() {
     <nav className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
       <div className="nav-inner container">
         <Link to="/" className="nav-logo">
-          <img src="/images/logo.png" alt="Sleeping Buffalo" className="nav-logo-img" />
+          <div className="nav-logo-icon">SB</div>
           <div className="nav-logo-text">
             <span className="nav-logo-main">Sleeping Buffalo</span>
             <span className="nav-logo-sub">Hot Springs & Resort · Est. 1929</span>
