@@ -52,14 +52,16 @@ export default function Nav() {
               {link.label}
             </Link>
           ))}
-          <a
-            href={RESNEXUS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary nav-book-overlay"
-          >
-            Book Now
-          </a>
+          {menuOpen && (
+            <a
+              href={RESNEXUS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary nav-book-overlay"
+            >
+              Book Now
+            </a>
+          )}
         </div>
 
         <div className="nav-right">
