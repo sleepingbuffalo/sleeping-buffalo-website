@@ -38,8 +38,11 @@ export default function Nav() {
     <nav className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
       <div className="nav-inner container">
         <Link to="/" className="nav-logo">
-          <img src="/images/logo.png" alt="Sleeping Buffalo Hot Springs" className="nav-logo-img" />
-          <span className="nav-logo-sub">Hot Springs & Resort · Est. 1929</span>
+          <img src="/images/logo.png" alt="Sleeping Buffalo" className="nav-logo-img" />
+          <div className="nav-logo-text">
+            <span className="nav-logo-main">Sleeping Buffalo</span>
+            <span className="nav-logo-sub">Hot Springs & Resort · Est. 1929</span>
+          </div>
         </Link>
 
         <div className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`}>
