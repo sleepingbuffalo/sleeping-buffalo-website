@@ -423,10 +423,13 @@
 
 @media (max-width: 768px) {
   .home-hero {
-    align-items: flex-start;
+    align-items: center;
+  }
+  .home-hero-image {
+    object-position: center bottom;
   }
   .home-hero-content {
-    padding-top: 40vh;
+    padding-top: 0;
     padding-bottom: 0;
   }
   .home-hero-scroll {
