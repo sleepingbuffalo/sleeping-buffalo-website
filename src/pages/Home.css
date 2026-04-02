@@ -423,10 +423,12 @@
 
 @media (max-width: 768px) {
   .home-hero {
+    height: 85vh;
+    min-height: 500px;
     align-items: center;
   }
   .home-hero-image {
-    object-position: center bottom;
+    object-position: center 60%;
   }
   .home-hero-content {
     padding-top: 0;
