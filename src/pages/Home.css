@@ -428,7 +428,10 @@
     align-items: center;
   }
   .home-hero-image {
-    object-position: center 60%;
+    object-position: 35% 45%;
+    transform: scale(2);
+    transform-origin: 35% 45%;
+    animation: none;
   }
   .home-hero-content {
     padding-top: 0;
