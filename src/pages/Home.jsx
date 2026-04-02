@@ -98,10 +98,8 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="home-hero">
-        <div className="home-hero-image-wrap">
-          <img src="/images/outdoor-pool-main.png" alt="Sleeping Buffalo outdoor mineral pool with steam rising under Montana sky" className="home-hero-image" />
-        </div>
+      <section className="home-hero" role="img" aria-label="Sleeping Buffalo outdoor mineral pool with steam rising under Montana sky">
+        <div className="home-hero-bg" />
         <div className="home-hero-overlay" />
         <div className="home-hero-content container">
           <SectionEyebrow text="Natural Hot Springs · Saco, Montana" />

@@ -12,15 +12,13 @@
   overflow: hidden;
 }
 
-.home-hero-image-wrap {
+.home-hero-bg {
   position: absolute;
   inset: 0;
-}
-
-.home-hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-image: url('/images/outdoor-pool-main.png');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
   animation: kenBurns 18s ease-in-out infinite alternate;
 }
 
@@ -427,10 +425,10 @@
     min-height: 500px;
     align-items: center;
   }
-  .home-hero-image {
-    object-position: 35% 45%;
-    transform: scale(2);
-    transform-origin: 35% 45%;
+  .home-hero-bg {
+    background-image: url('/images/hero-mobile.png');
+    background-size: cover;
+    background-position: center center;
     animation: none;
   }
   .home-hero-content {
