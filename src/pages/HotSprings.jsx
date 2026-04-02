@@ -5,7 +5,8 @@ import BookingBanner from '../components/BookingBanner'
 import './HotSprings.css'
 
 const hoursItems = [
-  'Open 9 AM – 8 PM · 7 Days a Week',
+  'Sunday – Thursday: 9:00 AM – 8:00 PM',
+  'Friday – Saturday: 9:00 AM – 9:00 PM',
   'Day use swimming welcome — no reservation needed',
   'Guest towels provided',
   'All pools monitored for temperature and cleanliness',

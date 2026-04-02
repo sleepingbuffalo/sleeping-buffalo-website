@@ -37,8 +37,8 @@ export default function Footer() {
             <address className="footer-address">
               <p>669 Buffalo Trail<br />Saco, Montana 59261</p>
               <a href="tel:4065273320">(406) 527-3320</a>
-              <a href="mailto:info@sbhotsprings.com">info@sbhotsprings.com</a>
-              <p className="footer-hours">Office Hours: 9 AM – 8 PM · 7 Days</p>
+              <a href="mailto:sbhotspringsoffice@gmail.com">sbhotspringsoffice@gmail.com</a>
+              <p className="footer-hours">Sun–Thu: 9 AM – 8 PM · Fri–Sat: 9 AM – 9 PM</p>
             </address>
           </div>
         </div>

@@ -43,11 +43,11 @@ export default function Contact() {
                   </div>
                   <div className="contact-info-item">
                     <span className="contact-info-label">Email</span>
-                    <a href="mailto:info@sbhotsprings.com">info@sbhotsprings.com</a>
+                    <a href="mailto:sbhotspringsoffice@gmail.com">sbhotspringsoffice@gmail.com</a>
                   </div>
                   <div className="contact-info-item">
                     <span className="contact-info-label">Office Hours</span>
-                    <span>9 AM – 8 PM · 7 Days</span>
+                    <span>Sun–Thu: 9 AM – 8 PM · Fri–Sat: 9 AM – 9 PM</span>
                   </div>
                 </div>
                 <div className="contact-map">

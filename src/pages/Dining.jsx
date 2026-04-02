@@ -147,12 +147,18 @@ export default function Dining() {
             <div className="din-hours-card">
               <SectionEyebrow text="Hours & Reservations" />
               <h2>Join Us</h2>
+              <p className="din-hours-line">
+                <strong>Buffalo Saloon:</strong> Thursday – Sunday, 5:00 PM to Close
+              </p>
+              <p className="din-hours-line">
+                Kitchen closes at 9:00 PM
+              </p>
               <p>
-                Check with us at{' '}
-                <a href="tel:4065273320" className="din-phone-link">
-                  (406) 527-3320
+                Call the saloon at{' '}
+                <a href="tel:4065273223" className="din-phone-link">
+                  (406) 527-3223
                 </a>{' '}
-                for current dining hours and reservations.
+                for reservations and info.
               </p>
             </div>
           </ScrollReveal>
