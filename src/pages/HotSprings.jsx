@@ -8,7 +8,7 @@ const hoursItems = [
   'Sunday – Thursday: 9:00 AM – 8:00 PM',
   'Friday – Saturday: 9:00 AM – 9:00 PM',
   'Day use swimming welcome — no reservation needed',
-  'Guest towels provided',
+  'Guest towels available for $2',
   'All pools monitored for temperature and cleanliness',
   'Chemical-free, flow-through natural mineral water',
 ]
@@ -185,6 +185,12 @@ export default function HotSprings() {
                 original quarry rock from the Fort Peck Dam era lines the walls &mdash; a
                 reminder that this building has stood since the late 1920s.
               </p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal delay={300}>
+            <div className="hs-dual-images">
+              <img src="/images/womans_lockerroom_shower.png" alt="Women's locker room showers" />
+              <img src="/images/womans_lockerroom.png" alt="Women's locker room" />
             </div>
           </ScrollReveal>
         </div>

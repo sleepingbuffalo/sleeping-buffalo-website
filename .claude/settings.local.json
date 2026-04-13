@@ -21,7 +21,13 @@
       "Bash(where gh:*)",
       "Bash(git remote:*)",
       "Bash(git branch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(python -c \"print\\('ok'\\)\")",
+      "Bash(python3 -c \"print\\('ok'\\)\")",
+      "Bash(where python:*)",
+      "Bash(where python3:*)",
+      "Bash(where py:*)",
+      "Bash(/c/Users/chris/AppData/Local/Python/bin/python:*)"
     ]
   }
 }
