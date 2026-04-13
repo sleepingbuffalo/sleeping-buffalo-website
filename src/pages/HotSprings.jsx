@@ -173,12 +173,6 @@ export default function HotSprings() {
             <h2>Locker Rooms &amp; Showers</h2>
           </ScrollReveal>
           <ScrollReveal delay={100}>
-            <div className="hs-dual-images">
-              <img src="/images/locker-room-stone.png" alt="Locker room built with original quarry rock walls" />
-              <img src="/images/showers-locker.png" alt="Clean shower and locker area with stone accents" />
-            </div>
-          </ScrollReveal>
-          <ScrollReveal delay={200}>
             <div className="hs-facilities-text">
               <p>
                 Full locker rooms with showers and lockers are available for all guests. The
@@ -187,7 +181,7 @@ export default function HotSprings() {
               </p>
             </div>
           </ScrollReveal>
-          <ScrollReveal delay={300}>
+          <ScrollReveal delay={200}>
             <div className="hs-dual-images">
               <img src="/images/womans_lockerroom_shower.png" alt="Women's locker room showers" />
               <img src="/images/womans_lockerroom.png" alt="Women's locker room" />
