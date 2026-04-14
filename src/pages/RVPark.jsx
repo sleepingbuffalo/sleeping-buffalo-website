@@ -11,7 +11,9 @@ const features = [
   'Easy pull-through sites — big rig friendly',
   'Dedicated bathhouse with restrooms and 6 showers',
   'Designated tent camping area',
-  'Full resort access including hot springs',
+  'RV sites include 2 free swims per site',
+  'Tent sites include 1 free swim per site',
+  'Hot springs open during regular day-use hours for campground guests',
 ]
 
 export default function RVPark() {
