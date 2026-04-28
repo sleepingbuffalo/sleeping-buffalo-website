@@ -1,32 +1,26 @@
 /* ============================================
-   SLEEPING BUFFALO HOT SPRINGS & RESORT
-   Global Styles
+   SLEEPING BUFFALO HOT SPRINGS AND RESORT
+   Sale Site · Global Styles
    ============================================ */
 
 :root {
-  --bg-dark: #0F0A05;
-  --bg-warm: #1A1008;
-  --surface: #241608;
-  --surface-light: #2E1E0A;
-  --tan: #C4956A;
-  --tan-light: #D4A87A;
-  --cream: #F0E4CC;
-  --cream-muted: #C8B89A;
-  --gold: #C9961E;
-  --gold-light: #E0AE3A;
-  --green: #3B5E3C;
-  --green-light: #4E7A50;
-  --muted: #7A6A55;
-  --border: rgba(196, 149, 106, 0.2);
-  --stone: #8B7355;
+  --bg: #0A0A0A;
+  --bg-elevated: #121212;
+  --bg-deeper: #050505;
+  --gold: #C4A35A;
+  --gold-soft: rgba(196, 163, 90, 0.7);
+  --gold-faint: rgba(196, 163, 90, 0.18);
+  --cream: #F5F0E8;
+  --cream-muted: rgba(245, 240, 232, 0.78);
+  --cream-quiet: rgba(245, 240, 232, 0.6);
+  --border: rgba(196, 163, 90, 0.22);
+  --border-soft: rgba(245, 240, 232, 0.08);
 
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Crimson Text', Georgia, serif;
-  --font-ui: 'Raleway', 'Helvetica Neue', sans-serif;
+  --font-heading: 'Cormorant Garamond', 'Garamond', Georgia, serif;
+  --font-body: 'Lato', 'Helvetica Neue', Arial, sans-serif;
 
-  --nav-height: 80px;
-  --max-width: 1280px;
-  --section-padding: 100px 0;
+  --max-width: 1240px;
+  --section-padding: 140px 0;
 }
 
 *, *::before, *::after {
@@ -43,38 +37,39 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: var(--bg-dark);
+  background: var(--bg);
   color: var(--cream);
-  line-height: 1.7;
-  font-size: 18px;
+  line-height: 1.75;
+  font-size: 17px;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 500;
+  line-height: 1.15;
   color: var(--cream);
+  letter-spacing: 0.005em;
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
-h4 { font-size: clamp(1.1rem, 2vw, 1.3rem); }
+h1 { font-size: clamp(2.6rem, 5.6vw, 4.6rem); }
+h2 { font-size: clamp(2.1rem, 4.4vw, 3.4rem); }
+h3 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
 
 p {
   color: var(--cream-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 1.15rem;
 }
 
 a {
-  color: var(--tan);
+  color: var(--gold);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 a:hover {
-  color: var(--gold-light);
+  color: var(--cream);
 }
 
 img {
@@ -82,7 +77,18 @@ img {
   display: block;
 }
 
-ul { list-style: none; }
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--bg);
+}
 
 .container {
   max-width: var(--max-width);
@@ -90,128 +96,26 @@ ul { list-style: none; }
   padding: 0 40px;
 }
 
-/* ---------- Buttons ---------- */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-ui);
-  font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 14px 32px;
-  border-radius: 2px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.35s ease;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: var(--tan);
-  color: var(--bg-dark);
-}
-
-.btn-primary:hover {
-  background: var(--tan-light);
-  color: var(--bg-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(196, 149, 106, 0.25);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--cream);
-  border: 1px solid var(--border);
-}
-
-.btn-outline:hover {
-  border-color: var(--tan);
-  color: var(--tan);
-  transform: translateY(-2px);
-}
-
-.btn-green {
-  background: var(--cream);
-  color: var(--green);
-}
-
-.btn-green:hover {
-  background: var(--gold-light);
-  color: var(--bg-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(240, 228, 204, 0.2);
-}
-
-/* ---------- Section Helpers ---------- */
-
 section {
   position: relative;
 }
 
-.section-dark {
-  background: var(--bg-dark);
-}
-
-.section-surface {
-  background: var(--surface);
-}
-
-.section-warm {
-  background: var(--bg-warm);
-}
-
-.section-green {
-  background: var(--green);
-}
-
-/* ---------- Scroll Reveal ---------- */
-
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ---------- Image Placeholder ---------- */
-
-.img-placeholder {
-  background: var(--surface-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* ---------- Responsive ---------- */
-
 @media (max-width: 1024px) {
+  :root {
+    --section-padding: 100px 0;
+  }
+  .container {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 700px) {
   :root {
     --section-padding: 80px 0;
   }
-  .container {
-    padding: 0 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  :root {
-    --section-padding: 60px 0;
-    --nav-height: 64px;
-  }
   body {
     font-size: 16px;
+    line-height: 1.7;
   }
   .container {
     padding: 0 20px;
